@@ -9,7 +9,7 @@ Proje üç aşamadan oluşmaktadır:
 
 ---
 
-## 🚀 Kurulum
+## Kurulum
 
 ### 1. Depoyu Klonla
 ```bash
@@ -48,3 +48,4 @@ DELETE /books/{isbn} → ISBN numarasına göre kitap siler
 Terminal uygulamasında kitap ekle → ardından listele → eklenen kitabı gör.
 Aynı işlemleri API üzerinden yap → POST ile kitap ekle, GET ile doğrula.
 Var olmayan bir ISBN silmeye çalış → hata mesajı döndüğünü gör.
+

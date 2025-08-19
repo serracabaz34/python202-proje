@@ -12,7 +12,7 @@ def main():
         print("4. Find Book ")
         print("5. Quit ")
 
-        choice = input("Seçiminiz: ")
+        choice = input("Your Choice: ")
 
         if choice == "1":
             title = input("Name Of The Book: ")

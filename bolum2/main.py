@@ -12,7 +12,7 @@ def main():
         print("4. Search for books (ISBN)")
         print("5. Quit")
 
-        secim = input("Seçim: ").strip()
+        secim = input("Your Choice: ").strip()
 
         if secim == "1":
             isbn = input("ISBN: ").strip()

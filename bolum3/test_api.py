@@ -11,7 +11,7 @@ def test_add_and_get_books():
 
     get_response = client.get("/books")
     assert get_response.status_code == 200
-    books = response.json()
+    books = get_response.json()
     assert any(book["isbn"] == "9780140328721" for book in books)
 
 def test_delete_book():

@@ -10,7 +10,7 @@ app = FastAPI()
 class Book(BaseModel):
     isbn: str
     title: str
-    author: list[str]
+    authors: list[str]
 
 class ISBNRequest(BaseModel):
     isbn: str

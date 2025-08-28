@@ -76,8 +76,8 @@ Bu bölümde amaç, kitaplık sistemini artık bir web servisi haline getirip d�
 
 # Kurulum
 Projeyi klonladıktan sonra:
-git clone https://github.com/kullaniciadi/python202globalai.git
-cd python202globalai
+git clone https://github.com/serracabaz34/python202-proje.git
+cd python202-proje
 
 Sanal ortam oluşturma (opsiyonel):
 python -m venv .venv
@@ -111,3 +111,4 @@ Kullanıcı giriş sistemi eklenmesi
 Frontend (React / Vue) ile basit bir arayüz
 
 # Not: Bu proje, Python öğrenimini desteklemek amacıyla hazırlanmış olup gerçek bir kitaplık sistemi için temel bir iskelet sunmaktadır.
+

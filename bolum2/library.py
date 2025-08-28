@@ -11,7 +11,7 @@ class Library:
         self.filename = filename
         self.books = []
         # Testlerde taklit edebilmek için client enjekte edilebilir
-        self.client = client or httpx.Client(timeout=10.0, base_url = OPENLIB_BASE)
+        self.client = client or httpx.Client(timeout=10.0, base_url = OPENLIB_BASE, follow_redirects = True)
         self.load_books()
 
     # Remove dashes/spaces in ISBN 

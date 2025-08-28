@@ -77,11 +77,13 @@ Bu bölümde amaç, kitaplık sistemini artık bir web servisi haline getirip d�
 
 # Kurulum
 Projeyi klonladıktan sonra:
+
 git clone https://github.com/serracabaz34/python202-proje.git
 
 cd python202-proje
 
 Sanal ortam oluşturma (opsiyonel):
+
 python -m venv .venv
 
 .venv\Scripts\activate  # Windows için
@@ -89,6 +91,7 @@ python -m venv .venv
 source .venv/bin/activate  # Mac/Linux için
 
 Gereksinimleri yükleme:
+
 pip install fastapi uvicorn pytest requests
 
 # Testler
@@ -96,9 +99,11 @@ pip install fastapi uvicorn pytest requests
 Projede testler pytest ile yazılmıştır.
 
 Çalıştırmak için:
+
 pytest -q
 
 Testler:
+
 API’ye kitap ekleme
 
 API’den kitapları listeleme
@@ -106,6 +111,7 @@ API’den kitapları listeleme
 Kitap silme işlemleri
 
 # Gelecek Geliştirmeler
+
 Kitaplara kategori eklenmesi
 
 Verilerin JSON yerine SQLite veritabanında saklanması
@@ -115,6 +121,7 @@ Kullanıcı giriş sistemi eklenmesi
 Frontend (React / Vue) ile basit bir arayüz
 
 # Not: Bu proje, Python öğrenimini desteklemek amacıyla hazırlanmış olup gerçek bir kitaplık sistemi için temel bir iskelet sunmaktadır.
+
 
 
 

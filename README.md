@@ -29,14 +29,15 @@ Bölüm 3 – Web API (FastAPI) ile kitapların internet üzerinden yönetilmesi
 
 # Kullanım
 Gerekli kütüphaneleri yüklemek için:
+
 pip install -r requirements.txt
 
 # Bölümler:
 
 # Bölüm 1: JSON Dosya İşlemleri
 Dosya: bolum1/
-Öğrenilenler:
 
+Öğrenilenler:
 Python’da JSON dosyalarını okuma ve yazma
 
 Basit veri ekleme/silme
@@ -114,5 +115,6 @@ Kullanıcı giriş sistemi eklenmesi
 Frontend (React / Vue) ile basit bir arayüz
 
 # Not: Bu proje, Python öğrenimini desteklemek amacıyla hazırlanmış olup gerçek bir kitaplık sistemi için temel bir iskelet sunmaktadır.
+
 
 

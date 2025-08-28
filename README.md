@@ -1,51 +1,113 @@
 ﻿# Python202 Proje
 # Python202 Proje: Kitap Yönetim Sistemi
 
-Bu proje, Python OOP mantığını ve API geliştirmeyi öğrenmek için hazırlanmış bir örnek projedir.  
-Proje üç aşamadan oluşmaktadır:  
-1. Terminal uygulaması (kitap ekleme, listeleme, silme vb.)  
-2. OOP (Sınıflar ve nesneler kullanılarak proje yapılandırması)  
-3. FastAPI ile REST API geliştirme  
+# İçindekiler
+Genel Bilgi
 
----
+Kullanım
 
-## Kurulum
+Bölümler
+Bölüm 1: JSON Dosya İşlemleri
+Bölüm 2: OOP ve Kitaplık Sistemi
+Bölüm 3: FastAPI ile REST API
 
-### 1. Depoyu Klonla
-```bash
-git clone https://github.com/serracabaz34/python202-proje.git
-cd python202-proje
+Kurulum
 
-### Sanal Ortam (Opsiyonel):
-python -m venv venv
-venv\Scripts\activate   # Windows için
+Testler
 
-### Bağımlılıklar:
+Gelecek Geliştirmeler
+
+# Genel Bilgi
+Bu proje, bir kitaplık uygulaması örneği üzerinden farklı Python kavramlarını öğretmek amacıyla üç aşamada tasarlanmıştır.
+Her bölüm bir önceki üzerine inşa edilmiştir:
+
+Bölüm 1 – Temel dosya okuma/yazma ve JSON işlemleri
+
+Bölüm 2 – Nesne yönelimli programlama ile kitap sınıfı ve kitaplık yönetimi
+
+Bölüm 3 – Web API (FastAPI) ile kitapların internet üzerinden yönetilmesi
+
+# Kullanım
+Gerekli kütüphaneleri yüklemek için:
 pip install -r requirements.txt
 
-### Aşama 1-2 İçin Terminal Uygulaması:
-python main.py
+# Bölümler:
 
-### Aşama 3 İçin Terminal Uygulaması:
-FastAPI tabanlı API sunucusunu başlatmak için:
-uvicorn api:app --reload
+# Bölüm 1: JSON Dosya İşlemleri
+Dosya: bolum1/
+Öğrenilenler:
 
-Daha sonra tarayıcıdan şu adrese giderek API dokümantasyonuna ulaşabilirsin:
-http://127.0.0.1:8000/docs
+Python’da JSON dosyalarını okuma ve yazma
 
-### API Dokümantasyonu:
+Basit veri ekleme/silme
+
+Bir kitaplık verisinin library.json dosyasında saklanması
+
+Bu bölümde temel amaç, verilerin dosyada nasıl tutulduğunu öğrenmek.
+
+# Bölüm 2: OOP ve Kitaplık Sistemi
+Dosya: bolum2/
+
+Öğrenilenler:
+OOP (Nesne Yönelimli Programlama) yapıları
+
+Book sınıfı: ISBN, kitap adı, yazar bilgilerini tutar
+
+Library sınıfı: Kitap ekleme, silme, arama gibi işlemleri yapar
+
+Bu bölümde amaç, gerçek hayattaki bir kitaplık sistemini kod ile modellemek.
+
+# Bölüm 3: FastAPI ile REST API
+Dosya: bolum3/
+
+Öğrenilenler:
+FastAPI framework kullanarak REST API geliştirme
+
+Endpointler:
+POST /books → Yeni kitap ekler (ISBN üzerinden)
+
 GET /books → Tüm kitapları listeler
-POST /books → Yeni kitap ekler
-Body (JSON örnek):
-{
-  "isbn": "123456789",
-  "title": "Python Öğreniyorum",
-  "author": "Serra Cabaz"
-}
-DELETE /books/{isbn} → ISBN numarasına göre kitap siler
 
-### Test Senaryoları
-Terminal uygulamasında kitap ekle → ardından listele → eklenen kitabı gör.
-Aynı işlemleri API üzerinden yap → POST ile kitap ekle, GET ile doğrula.
-Var olmayan bir ISBN silmeye çalış → hata mesajı döndüğünü gör.
+DELETE /books/{isbn} → ISBN’e göre kitap siler
 
+Pytest ile API testleri yazma
+
+Bu bölümde amaç, kitaplık sistemini artık bir web servisi haline getirip dışarıya açmak.
+
+# Kurulum
+Projeyi klonladıktan sonra:
+git clone https://github.com/kullaniciadi/python202globalai.git
+cd python202globalai
+
+Sanal ortam oluşturma (opsiyonel):
+python -m venv .venv
+.venv\Scripts\activate  # Windows için
+source .venv/bin/activate  # Mac/Linux için
+
+Gereksinimleri yükleme:
+pip install fastapi uvicorn pytest requests
+
+# Testler
+
+Projede testler pytest ile yazılmıştır.
+
+Çalıştırmak için:
+pytest -q
+
+Testler:
+API’ye kitap ekleme
+
+API’den kitapları listeleme
+
+Kitap silme işlemleri
+
+# Gelecek Geliştirmeler
+Kitaplara kategori eklenmesi
+
+Verilerin JSON yerine SQLite veritabanında saklanması
+
+Kullanıcı giriş sistemi eklenmesi
+
+Frontend (React / Vue) ile basit bir arayüz
+
+# Not: Bu proje, Python öğrenimini desteklemek amacıyla hazırlanmış olup gerçek bir kitaplık sistemi için temel bir iskelet sunmaktadır.
